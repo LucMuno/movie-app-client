@@ -10,7 +10,7 @@ const apikey = '1bc6c554';
 export function getMovies(titulo){
     return async function(dispatch){
         try{
-            var json = await axios.get(`http://www.omdbapi.com/?apikey=${apikey}&s=${titulo}&page=1`);
+            var json = await axios.get(`https://www.omdbapi.com/?apikey=${apikey}&s=${titulo}&page=1`);
             console.log("aqui",json.data)
             return dispatch({
                 type: 'GET_MOVIES',
@@ -25,7 +25,7 @@ export function getMovies(titulo){
 export function getDetail(id) {
     return async function (dispatch) {
         try{
-            var json = await axios.get(`http://www.omdbapi.com/?apikey=${apikey}&i=${id}`)
+            var json = await axios.get(`https://www.omdbapi.com/?apikey=${apikey}&i=${id}`)
             return  dispatch({
                 type: 'GET_DETAIL',
                 payload : json.data
