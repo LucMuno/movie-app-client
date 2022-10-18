@@ -1,0 +1,90 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../movies-wallpaper.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+    height: 100vh;
+    width: 100vw;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+.movie {
+    width: 600px;
+    height: 25px;
+    background-color: aqua;
+    margin: 5px;
+    padding-left: 5px;
+}
+.movie:hover {
+    transform: scale(1.01);
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.header {
+    background: rgb(2,0,36);
+    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(0,104,255,1) 52%, rgba(2,0,36,1) 100%); 
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+}
+.header h3{
+    color: white;
+    font-size: 28px;
+    
+}
+.name {
+    color: white;
+    font-size: 28px;
+    font-style: italic;
+}
+.Backbtn {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.movieContainer {
+    display: flex;
+    flex-direction: row;
+}
+.deleteBtn {
+    height: 25px;
+    background-color: aqua;
+    border: none;
+    margin-top: 5px;
+}
+.deleteBtn:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+@media only screen and (max-width:670px){
+    .header{
+        height: 100px;
+    }
+    .movie{
+        width: 400px;
+    }
+}    
+@media only screen and (max-width:500px){
+    .header{
+        height: 150px;
+        flex-wrap: wrap;
+    }
+    .movie{
+        height: auto;
+    }
+}    

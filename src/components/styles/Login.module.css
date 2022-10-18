@@ -1,0 +1,58 @@
+.LoginBackground {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LoginContainer {
+    width: 200px;
+    height: 320px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin-top: 500px;
+}
+.LoginContainer .title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+}
+.Register {
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.CloseBtn {
+    display: flex;
+    justify-content: flex-end;
+}
+.CloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.LoginContainer .LoginFooter {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.LoginContainer .LoginFooter button {
+    width: 80px;
+    height: 25px;
+    margin: 5px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}

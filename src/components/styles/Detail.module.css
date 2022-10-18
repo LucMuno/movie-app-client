@@ -1,0 +1,95 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../movies-wallpaper.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+    height: 100vh;
+    width: 100vw;
+    
+   
+}
+.header {
+    background: rgb(2,0,36);
+    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(0,104,255,1) 52%, rgba(2,0,36,1) 100%); 
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+.movieContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    align-content: center;
+    justify-content: center;
+}
+.img {
+    width:400px;
+    height: 600px;
+}
+.textContainer {
+    width: 400px;
+    height: 600px;
+    background-color:rgba(255, 255, 255, 0.5) ;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.textContainer h3{
+    font-family: 'Droid Sans';
+}
+.textContainer h2{
+    font-family: 'Cantarell';
+}
+
+.BackBtn{
+    font-size: 25px;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+.BackBtn:hover {
+    cursor: pointer;
+}
+@media only screen and (max-width:800px){
+    .movieContainer{
+        flex-direction: column;
+    }
+    .container{
+        height: 100%;
+    }
+    .movieContainer{
+        flex-wrap: wrap;
+    }
+    .img{
+        width: 410px;
+    }
+}    
+.loading {
+    color: hsl(61, 92%, 42%);
+    font-style: oblique;
+}
+.loadingContainer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.heart:hover {
+    cursor: pointer;
+   
+    
+}
+.redHeart:hover {
+    cursor: default;
+    
+}
